@@ -20,21 +20,6 @@ The `wrangle()` function performs comprehensive data preprocessing:
 - Converts House size to integer (removes 'm²' units)
 - Removes outliers using IQR method
 
-  ## Technical Implementation
-
-### Libraries Used
-- pandas: Data manipulation and analysis
-- matplotlib: Data visualization
-- scikit-learn: Machine learning implementation
-  - LinearRegression
-  - mean_absolute_error
-  - check_is_fitted
-
-### Model Validation
-- **Training Data**: Westlands apartments (16 samples)
-- **Testing Data**: Kilimani apartments (24 samples)
-- **Evaluation Metric**: Mean Absolute Error (MAE)
-
 ## Model Development
 
 ### Baseline Model
@@ -58,6 +43,21 @@ The `wrangle()` function performs comprehensive data preprocessing:
 ### Model Equation
 The final predictive model:
 - apartment_price = 1,602,491 + 95,767.01 × House_size
+
+ ## Technical Implementation
+
+### Libraries Used
+- pandas: Data manipulation and analysis
+- matplotlib: Data visualization
+- scikit-learn: Machine learning implementation
+  - LinearRegression
+  - mean_absolute_error
+  - check_is_fitted
+
+### Model Validation
+- **Training Data**: Westlands apartments (16 samples)
+- **Testing Data**: Kilimani apartments (24 samples)
+- **Evaluation Metric**: Mean Absolute Error (MAE)
 
 
 ### Key Findings
